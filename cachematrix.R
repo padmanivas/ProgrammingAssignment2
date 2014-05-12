@@ -32,6 +32,7 @@ cacheSolve <- function(x, ...) {
                 return(m)
         }
         data <- x$get()
+        ##solve is used to find the inverse
         m <- solve(data, ...)
         x$setinverse(m)
         m
